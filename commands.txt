@@ -1,0 +1,31 @@
+# Creating virtula environment
+python -m venv shreyas_env
+
+#Activate virtual environment
+cd shreyas_env/Scripts/
+./activate
+
+#Exporting all requiremnets
+pip freeze > requirements.txt
+
+#Build docker images
+docker build -t python_flask_docker_image:1.0 .
+
+# List the docker images
+docker images
+
+# Run the docker image using docker image name or image id
+docker run --name python_flask_docker_image -p 5001:5001 python_flask_docker_image
+docker run ef865b777cc2
+
+# Stop the running docker container using docker container id
+docker stop 2497166c855e
+
+# Remove cfreated docker image
+docker image rm image_id
+
+#remove all unused images and stoped containers
+docker system prune -a
+
+
+
