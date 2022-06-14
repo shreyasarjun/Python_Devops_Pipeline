@@ -9,7 +9,7 @@ cd shreyas_env/Scripts/
 pip freeze > requirements.txt
 
 #Build docker images
-docker build -t python_flask_docker_image:1.0 .
+docker build -t python_flask_docker_image .
 
 # List the docker images
 docker images
