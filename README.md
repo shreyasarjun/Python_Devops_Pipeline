@@ -1,2 +1,2 @@
 This is python-flask application with CICD pipelines
-It includes python -->github -->docker -->Jenkins -->Kuberenets
+It contains devops tools like Github,Docker,DockerHub,Jenkins etc
